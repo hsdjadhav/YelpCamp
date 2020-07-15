@@ -48,7 +48,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next){
 		});
 		
 	} else {
-		req.flash("error", "You need to be logged in to do that!")
+		req.flash("error", "You need to be logged in fist to do that!")
 		res.redirect("back");
 	}
 
